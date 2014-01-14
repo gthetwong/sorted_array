@@ -41,7 +41,7 @@ class SortedArray
   end
 
   def index(target)
-    left = first_larger_index(target, 0, (@internal_arr.length-1)/2)
-        first_larger_index(target, 0, left)
+    ind = @internal_arr.index(first_larger_index(target))
+
   end
 end
